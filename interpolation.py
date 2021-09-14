@@ -22,15 +22,4 @@ def main():
     j3 = L3(x, x0, x1, x2, x3)            
     value = (y0 * j0) + (y1 * j1) + (y2 * j2) + (y3 * j3)
     print(str(value))
-def remove(string):
-    words = string.split()
-    words.sort()
-    words = list(dict.fromkeys(words))
-    returnstring = ""
-    for i in words:
-        returnstring += i
-        returnstring += " "
-    return returnstring
- 
- 
-print(remove("hello world and practice makes perfect and hello world again"))
+main()
